@@ -1,1 +1,31 @@
-<mxfile host="app.diagrams.net" modified="2022-02-07T23:53:41.077Z" agent="5.0 (Windows)" version="16.5.3" etag="auK4ZOp9iJuvVrCmDXd0" type="github"><diagram id="drxs3hfKMN1gE-JqiGeO">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-05-25T03:27:45.312Z" agent="5.0 (Windows)" etag="1y57lC0I6MB9flD6IRg1" version="18.1.1" type="github">
+  <diagram id="drxs3hfKMN1gE-JqiGeO" name="Page-1">
+    <mxGraphModel dx="1185" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--2" value="hookedbrowsers.rb" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="440" y="70" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--3" value="build_beefjs!(host_name)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--2">
+          <mxGeometry x="20" y="40" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--4" value="BeEF:Core:Handlers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--2">
+          <mxGeometry y="210" width="130" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--6" value="beefjs.rb" style="swimlane;" vertex="1" parent="1">
+          <mxGeometry x="5" y="70" width="400" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--7" value="def build_beefjs!(req_host)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
+          <mxGeometry x="20" y="40" width="250" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--8" value="BeEF:Core:Handlers:Modules:BeEFJS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
+          <mxGeometry y="210" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oBqLMDZ1AJPGyT5ipZU--3" target="oBqLMDZ1AJPGyT5ipZU--7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
