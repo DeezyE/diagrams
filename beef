@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-05-25T03:27:45.312Z" agent="5.0 (Windows)" etag="1y57lC0I6MB9flD6IRg1" version="18.1.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-05-26T10:02:13.627Z" agent="5.0 (Windows)" etag="d8iWqdrWR6vYb-Vh9jKE" version="18.1.1" type="github">
   <diagram id="drxs3hfKMN1gE-JqiGeO" name="Page-1">
     <mxGraphModel dx="1185" dy="650" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -7,20 +7,23 @@
         <mxCell id="oBqLMDZ1AJPGyT5ipZU--2" value="hookedbrowsers.rb" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="440" y="70" width="400" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="oBqLMDZ1AJPGyT5ipZU--3" value="build_beefjs!(host_name)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--2">
-          <mxGeometry x="20" y="40" width="250" height="90" as="geometry" />
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--3" value="&lt;div style=&quot;font-size: 9px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;if BeEF::Core::Configuration.instance.get(&#39;beef.http.websocket.enable&#39;)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; build_beefjs!(host_name)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; elsif BeEF::Core::Configuration.instance.get(&#39;beef.http.multi_stage.enable&#39;)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; build_multistage_beefjs!(host_name)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; else&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; legacy_build_beefjs!(host_name)&lt;br&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; end&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 9px;&quot; align=&quot;left&quot;&gt;&lt;font style=&quot;font-size: 9px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--2">
+          <mxGeometry x="10" y="60" width="380" height="110" as="geometry" />
         </mxCell>
         <mxCell id="oBqLMDZ1AJPGyT5ipZU--4" value="BeEF:Core:Handlers" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--2">
           <mxGeometry y="210" width="130" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="oBqLMDZ1AJPGyT5ipZU--6" value="beefjs.rb" style="swimlane;" vertex="1" parent="1">
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--6" value="legacy_beefjs.rb" style="swimlane;" vertex="1" parent="1">
           <mxGeometry x="5" y="70" width="400" height="230" as="geometry" />
         </mxCell>
-        <mxCell id="oBqLMDZ1AJPGyT5ipZU--7" value="def build_beefjs!(req_host)" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
-          <mxGeometry x="20" y="40" width="250" height="90" as="geometry" />
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--7" value="&lt;div&gt;def build_legacy_beefjs!(req_host)&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Outputs what will become hook.js&lt;br&gt;@body &amp;lt;&amp;lt; @final_hook&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=center;verticalAlign=top;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
+          <mxGeometry x="20" y="70" width="250" height="90" as="geometry" />
         </mxCell>
         <mxCell id="oBqLMDZ1AJPGyT5ipZU--8" value="BeEF:Core:Handlers:Modules:BeEFJS" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
           <mxGeometry y="210" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="oBqLMDZ1AJPGyT5ipZU--10" value="Note: same as beefjs.rb, but legacy does not trigger on websockets" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="oBqLMDZ1AJPGyT5ipZU--6">
+          <mxGeometry y="24" width="380" height="20" as="geometry" />
         </mxCell>
         <mxCell id="oBqLMDZ1AJPGyT5ipZU--9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="oBqLMDZ1AJPGyT5ipZU--3" target="oBqLMDZ1AJPGyT5ipZU--7">
           <mxGeometry relative="1" as="geometry" />
